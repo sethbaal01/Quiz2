@@ -57,6 +57,30 @@ class ProfileSection extends StatelessWidget {
       ],
     );
   }
+}
 
+//holds the logic and builds/rebuilds the follower counter, _make it private top this file
+class _FollowerCountState extends State<FollowerCount> {
+  int _followers = 0;
+
+  void _addFollowers(){
+    setState((){
+      _followers++;
+    });
+  }
+
+  @override build(BuildContext){
+
+  }
+}
+
+class FollowerCount extends StatefulWidget {
+  const FollowerCount({super.key});
+
+  //just need to call the followercount Strate here
+  @override
+  State<StatefulWidget> createState() {
+    return _FollowerCountState();
+  }
 }
 
