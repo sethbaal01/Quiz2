@@ -21,3 +21,42 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//build the picture, name, profession, and email
+class ProfileSection extends StatelessWidget {
+  const ProfileSection({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        const CircleAvatar( //picture child here
+          radius: 70,
+          backgroundImage: AssetImage('lib/generic_profile_picture'),
+        ),
+        const Text(  //name child here
+          'Seth Baal',
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.normal,
+          ),
+        ),
+        const Text(  //title child here
+          'Software Developer',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.normal,
+          ),
+        ),
+        const Text(  //email child here
+          'Email: sethbaal00@gmail.com',
+          style: TextStyle(
+            fontSize: 15,
+            fontWeight: FontWeight.normal,
+          ),
+        ),
+      ],
+    );
+  }
+
+}
+
