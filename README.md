@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # sbaal_quiz2
 
 A new Flutter project.
@@ -15,3 +16,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Quiz2
+My repo for Quiz 2 on ITSE 2343
+>>>>>>> b5770926f8b28834d39f50f390502a2a82e9724c
