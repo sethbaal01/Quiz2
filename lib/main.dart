@@ -70,7 +70,18 @@ class _FollowerCountState extends State<FollowerCount> {
   }
 
   @override build(BuildContext){
-
+    return Column(
+      children: [
+        Text(
+          'Followers: $_followers',
+          style: const TextStyle( fontSize: 20),
+        ),
+        ElevatedButton(
+          onPressed: _addFollowers,
+          child: const Text('Follow'),
+        )
+      ],
+    );
   }
 }
 
